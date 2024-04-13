@@ -1,0 +1,49 @@
+.logo-cover {
+  color: white;
+}
+
+.jumbotron {
+  background: url(../../assets/images/cover.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Montserrat, sans-serif;
+}
+
+.jumbotron h1, h2 {
+  text-shadow: 2px 2px #000000;
+}
+
+.header-section {
+  font-family: Montserrat, sans-serif;
+}
+
+img:hover {
+  box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+  cursor: pointer;
+  transition: transform .2s;
+  opacity: 0.5;
+}
+
+.bottom-left-country {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 2px #000000;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+
+.col-sm-4 {
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}

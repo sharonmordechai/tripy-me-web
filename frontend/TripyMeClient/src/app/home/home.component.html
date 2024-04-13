@@ -1,0 +1,72 @@
+<!-- <div *ngIf="info.token; else loggedOut">
+  <h5 class="text-primary">Your Information</h5>
+  <p>
+    <strong>Email:</strong> {{ info.email }}<br/>
+    <strong>Roles:</strong> {{ info.authorities }}<br />
+    <strong>Token:</strong> {{ info.token }}.
+  </p>
+</div>
+
+<ng-template #loggedOut></ng-template> -->
+
+<header id="header"></header>
+<div class="jumbotron text-center">
+  <div class="logo-cover">
+    <h1>Tripy<b>Me</b></h1>
+    <h2>Get Social With Your Friends</h2>
+  </div>
+</div>
+
+<div class="container text-center">
+
+  <hr>
+  <h3 class="header-section">Choose Your <b>Country</b></h3><br>
+
+  <div class="row">
+
+    <div class="col-sm-4 country">
+      <img src="../../assets/countries/Argentina.jpg" class="img-responsive" style="width:100%" alt="Argentina">
+      <div class="bottom-left-country">ARGENTINA</div>
+    </div>
+    <div class="col-sm-4">
+      <img src="../../assets/countries/Chile.jpg" class="img-responsive" style="width:100%" alt="Chile">
+      <div class="bottom-left-country">CHILE</div>
+    </div>
+    <div class="col-sm-4">
+      <img src="../../assets/countries/Bolivia.jpg" class="img-responsive" style="width:100%" alt="Bolivia">
+      <div class="bottom-left-country">BOLIVIA</div>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="../../assets/countries/Peru.jpg" class="img-responsive" style="width:100%" alt="Peru">
+      <div class="bottom-left-country">PERU</div>
+    </div>
+    <div class="col-sm-4">
+      <img src="../../assets/countries/Ecuador.jpg" class="img-responsive" style="width:100%" alt="Ecuador">
+      <div class="bottom-left-country">ECUADOR</div>
+    </div>
+    <div class="col-sm-4">
+      <img src="../../assets/countries/Colombia.jpg" class="img-responsive" style="width:100%" alt="Colombia">
+      <div class="bottom-left-country">COLOMBIA</div>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="../../assets/countries/Panama.jpg" class="img-responsive" style="width:100%" alt="Panama">
+      <div class="bottom-left-country">PANAMA</div>
+    </div>
+    <div class="col-sm-4">
+      <img src="../../assets/countries/CostaRica.jpg" class="img-responsive" style="width:100%" alt="CostaRica">
+      <div class="bottom-left-country">COSTA RICA</div>
+    </div>
+    <div class="col-sm-4">
+      <img src="../../assets/countries/Belize.jpg" class="img-responsive" style="width:100%" alt="Belize">
+      <div class="bottom-left-country">BELIZE</div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="container-fluid text-center footer navbar-fixed-buttom">
+  <a (click)="navigateToHeader(400)" style="cursor: pointer;"><span class="glyphicon glyphicon-chevron-up"></span></a>
+  <p style="color: #436f80;">© TripyMe 2019 All Rights Reserved | Power By Sharon Mordechai</p>
+</footer>

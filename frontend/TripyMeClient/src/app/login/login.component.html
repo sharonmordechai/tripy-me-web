@@ -1,0 +1,66 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="login-container">
+          <div class="login-content">
+              <h1 class="login-title">Log In</h1>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="social-login">
+                    <div class="row">
+                      <a class="btn btn-block social-btn google" href={{GOOGLE_AUTH_URL}}>
+                          <img src="/assets/images/google-logo.png" alt="Google" /> Sign up with Google</a>
+                    </div>
+                    <div class="row">
+                      <a class="btn btn-block social-btn facebook" href={{FACEBOOK_AUTH_URL}}>
+                          <img src="/assets/images/fb-logo.png" alt="Facebook" /> Sign up with Facebook</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <form class="form-signin"
+                    novalidate
+                    (ngSubmit)="onSubmit()"
+                    [formGroup]="loginForm" >
+
+                  <div class="form-group">
+                    <input class="form-control"
+                      id="emailId"
+                      type="text"
+                      placeholder="Email (required)"
+                      formControlName="email"
+                      [ngClass]="{'is-invalid': errorMessage}" />
+
+                    <input class="form-control"
+                      id="passwordId"
+                      type="password"
+                      placeholder="Password (required)"
+                      formControlName="password"
+                      [ngClass]="{'is-invalid': errorMessage}" />
+                  </div>
+
+                  <div *ngIf="errorAlert || isLoginFailed" class="alert alert-danger">
+                    <strong>
+                      <span class="glyphicon glyphicon-exclamation-sign"></span>
+                        {{ errorMessage }}
+                    </strong>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="">
+                      <button class="btn btn-block btn-primary"
+                          type="submit"
+                          [title]="loginForm.valid ? 'try to login' : 'Disabled until the your credentials are valid'"
+                          [disabled]="!loginForm.valid">
+                        Login
+                      </button>
+                    </div>
+                  </div>
+              </form>
+              <a class="text-center new-account" routerLink="" (click)="register()">Create a New Account!</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
